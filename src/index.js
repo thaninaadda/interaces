@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import ConnexionParent from './Component-connexion-parent/Connexion';
-//import InscriptionParent from './Component-inscription-parent/Inscription';
-//import ConnexionBenevole from './Component-connexion/Connexion';
+import ConnexionParent from './Component-connexion-parent/Connexion';
+import InscriptionParent from './Component-inscription-parent/Inscription';
+import ConnexionBenevole from './Component-connexion/Connexion';
 import InscriptionBenevole from './Component-inscription/Inscription';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     {/* <ConnexionBenevole />  */}
+      <ConnexionBenevole />  
     {/* <ConnexionParent /> */}
     {/* <InscriptionParent /> */}
-     <InscriptionBenevole /> 
+     {/* <InscriptionBenevole />  */}
   </React.StrictMode>
 );
 
