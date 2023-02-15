@@ -6,11 +6,13 @@ import InscriptionParent from './Component-inscription-parent/Inscription';
 import ConnexionBenevole from './Component-connexion/Connexion';
 import InscriptionBenevole from './Component-inscription/Inscription';
 import reportWebVitals from './reportWebVitals';
+import Utilisateur from './API/utilisateur';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <ConnexionBenevole />  
+    <Utilisateur></Utilisateur>
+      {/* <ConnexionBenevole />   */}
     {/* <ConnexionParent /> */}
     {/* <InscriptionParent /> */}
      {/* <InscriptionBenevole />  */}
@@ -21,6 +23,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-// 6416514063413.641
