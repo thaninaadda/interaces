@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ConnexionParent from './Component-connexion-parent/Connexion';
-import InscriptionParent from './Component-inscription-parent/Inscription';
-import ConnexionBenevole from './Component-connexion/Connexion';
-import InscriptionBenevole from './Component-inscription/Inscription';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Utilisateur from './API/utilisateur';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Utilisateur></Utilisateur>
+    <App />
       {/* <ConnexionBenevole />   */}
     {/* <ConnexionParent /> */}
     {/* <InscriptionParent /> */}

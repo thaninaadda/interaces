@@ -13,30 +13,32 @@ function Inscription() {
           <h2>Inscription Benevole</h2>
 
           <h4>Entrez votre nom et prenom:</h4>
+          <form action="http://localhost:8080/creerBenevole" method="post">
+            
           <div className='input-nomprenom' >
             <div className='input-nom'>
-              <input type="text" placeholder="Entrez Votre Nom" className="input" /><br></br>
+              <input type="text" name='nom' placeholder="Entrez Votre Nom" className="input" /><br></br>
             </div>
 
             <div className='input-prenom'>
-              <input type="texte" placeholder="Entrez Votre Prenom" className="input" />
+              <input type="texte" name='prenom' placeholder="Entrez Votre Prenom" className="input" />
             </div>
           </div>
 
           <div className='input-nomprenom' >
             <div className='input-nom'>
-              <input type="text" placeholder="Entrez Votre Email" className="input" /><br></br>
+              <input type="text" name='courriel' placeholder="Entrez Votre Email" className="input" /><br></br>
             </div>
 
             <div className='input-prenom'>
-              <input type="password" placeholder="Entrez Votre Telephone" className="input" />
+              <input type="text" name='telephone' placeholder="Entrez Votre Telephone" className="input" />
             </div>
           </div>
 
 
           <div >
-            <input type="date" placeholder="Entrez Votre Date de Naissance" className="input" /><br></br>
-            <input type="text" placeholder="Entrez Votre Adresse" className="input" />
+            <input type="date" name='dateNaissance' placeholder="Entrez Votre Date de Naissance" className="input" /><br></br>
+            <input type="text" name='lieuResidence' placeholder="Entrez Votre Adresse" className="input" />
           </div>
 
 
@@ -45,20 +47,20 @@ function Inscription() {
             <input type="radio" value="Female" name="gender" /> Anglais
             <input type="radio" value="Other" name="gender" /> Autre
             <br></br>
-            <input type="text" placeholder="Entrez une autre langue" className="input" /><br></br>
+            <input type="text" name='langue' placeholder="Entrez une autre langue" className="input" /><br></br>
           </div>
 
           <div className="input">
             <br></br>
-            <input type="text" placeholder="Delai totale d’allaitement" className="input" />
-            <input type="text" placeholder="Experience benevole passee" className="input" />
-            <input type="text" placeholder="Autre Commentaires" className="input" />
+            <input type="text" name='dureeTotalAllaitement' placeholder="Delai totale d’allaitement" className="input" />
+            <input type="text" name='experience' placeholder="Experience benevole passee" className="input" />
+            <input type="text" name='commentaire' placeholder="Autre Commentaires" className="input" />
           </div>
 
           <div className="login-button">
-            <button>Connexion</button>
+          <input type='submit' value='sinscrire'/>
           </div>
-
+          </form>
           <p className="link">
             <a>s'inscrire</a>
           </p>
