@@ -7,8 +7,11 @@ function AfficherActivite() {
     <div className="main">
 
           <h2>Affichage Activite</h2>
-          <form action="http://localhost:8080/activite" method="post">
-    
+          <table>
+            
+          </table>
+          <form action="http://localhost:8080/activite" method="get">
+
           </form>
 
 
