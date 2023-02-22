@@ -12,16 +12,16 @@ import {
 // import Activite from "./Activite";
 // import CreerActivite from "./CreerActivite";
 // import Test from './components/test';
-import Activite from "./Activite";
+
 
 
 import ConnexionParent from './Component-connexion-parent/Connexion';
 import CreationActivite from './Component-creation-activite/Creation';
-//import AfficherActivite from './Component-afficher-activite/AfficherActivite';
+import AfficherActivite from './Component-afficher-activite/AfficherActivite';
 import InscriptionParent from './Component-inscription-parent/Inscription';
 import ConnexionBenevole from './Component-connexion-benevole/Connexion';
 import InscriptionBenevole from './Component-inscription-benevole/Inscription';
-
+import AfficherUtilisateurs from './Component-afficher-utilisateurs/Utilisateurs';
 export default function App() {
 
  
@@ -46,12 +46,13 @@ export default function App() {
             <li>
               <Link to="/CreationActivite">Creation Activite</Link>
             </li>
-            {/* <li>
+             <li>
               <Link to="/AfficherActivite">Afficher Activite</Link>
-            </li> */}
+            </li> 
             <li>
-              <Link to="/Activite">Activite</Link>
-            </li>
+              <Link to="/AfficherUtilisateurs">Afficher Utilisateurs</Link>
+            </li> 
+        
            
            
           </ul>
@@ -70,9 +71,9 @@ export default function App() {
           </Route>
           <Route path="/CreationActivite" element={<CreationActivite/>}>
           </Route>
-          {/* <Route path="/AfficherActivite" element={<AfficherActivite/>}>
-          </Route> */}
-          <Route path="/Activite" element={<Activite/>}>
+           <Route path="/AfficherActivite" element={<AfficherActivite/>}>
+          </Route> 
+          <Route path="/AfficherUtilisateurs" element={<AfficherUtilisateurs/>}>
           </Route>
           
         </Routes>
