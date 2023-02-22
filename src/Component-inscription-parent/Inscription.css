@@ -12,14 +12,14 @@
 
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 65%;
   /* padding-top: 30px; */
   background-color: #D0D5E5;
   padding-top: 2%;
 }
 
 .sub-main2 {
-  width: 35%;
+  width: 20%;
   padding-left: 2%;
   display: flex;
   justify-content: center;
@@ -33,12 +33,12 @@
 }
 
 .input-nom {
-  width: 50%;
+  width: 60%;
 
 }
 
 .input-prenom {
-  width: 50%;
+  width: 60%;
 
   margin-left: 10%;
 
